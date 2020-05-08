@@ -1,0 +1,8 @@
+function addslashes( str ) {  
+    // Escapes single quote, double quotes and backslash characters in a string with backslashes    
+    // Função para aceitar(formatar) aspas simples, duplas e barra inversa
+    // *     example 1: addslashes("kevin's birthday");  
+    // *     returns 1: 'kevin\'s birthday'  
+   
+    return (str+'').replace(/([\\"'])/g, "\\$1").replace(/\0/g, "\\0");  
+}  
